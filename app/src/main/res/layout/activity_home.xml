@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vaibhav.dpaddemo.Home"
+    android:gravity="center"
+    >
+
+    <ImageButton
+        android:id="@+id/up_arrow"
+        style="@style/DirectionButton"
+        android:layout_toRightOf="@+id/left_arrow"
+        android:nextFocusDown="@+id/down_arrow"
+        android:nextFocusLeft="@id/left_arrow"
+        android:nextFocusRight="@+id/right_arrow"
+        android:src="@drawable/arrow_up"
+        />
+
+    <ImageButton
+        android:id="@id/left_arrow"
+        style="@style/DirectionButton"
+        android:layout_below="@id/up_arrow"
+        android:nextFocusDown="@id/down_arrow"
+        android:nextFocusRight="@id/right_arrow"
+        android:nextFocusUp="@id/up_arrow"
+        android:src="@drawable/arrow_left"
+        />
+
+    <ImageButton
+        android:id="@id/right_arrow"
+        style="@style/DirectionButton"
+        android:layout_below="@id/up_arrow"
+        android:layout_toRightOf="@id/up_arrow"
+        android:nextFocusDown="@id/down_arrow"
+        android:nextFocusLeft="@id/left_arrow"
+        android:nextFocusUp="@id/up_arrow"
+        android:src="@drawable/arrow_right"
+        />
+
+    <ImageButton
+        android:id="@id/down_arrow"
+        style="@style/DirectionButton"
+        android:layout_below="@id/right_arrow"
+        android:layout_toRightOf="@id/left_arrow"
+        android:nextFocusLeft="@id/left_arrow"
+        android:nextFocusRight="@id/right_arrow"
+        android:nextFocusUp="@id/up_arrow"
+        android:src="@drawable/arrow_down"
+        />
+
+</RelativeLayout>
